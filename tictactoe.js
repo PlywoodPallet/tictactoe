@@ -24,7 +24,9 @@ const displayController = (() => {
 })();
 
 // player object
+// does it need to store a mark? (X or O)
+const playerFactory = (name, marker) => {
 
+    return { name, marker };
 
-
-
+};
