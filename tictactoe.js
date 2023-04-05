@@ -20,6 +20,13 @@ const gameBoard = (() => {
 // display the board, handle player input, control the game
 const displayController = (() => {
 
+    // update the display of the game state on page
+    const updateGame = () => {
+        const gameDiv = document.querySelector('.game');
+        gameDiv.textContent = gameBoard.board;
+    };
+
+    return { updateGame };
 
 })();
 
@@ -30,3 +37,5 @@ const playerFactory = (name, marker) => {
     return { name, marker };
 
 };
+
+displayController.updateGame();
