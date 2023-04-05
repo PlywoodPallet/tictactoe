@@ -4,7 +4,6 @@
 
 // Store the board, and handle changes in the board due to player action
 const gameBoard = (() => {
-    'use strict';
 
     const board = [
         [null, null, null],
@@ -23,6 +22,8 @@ const displayController = (() => {
 
 
 })();
+
+// player object
 
 
 
