@@ -22,7 +22,7 @@ const displayController = (() => {
 
     // update the display of the game state on page
     const updateGame = () => {
-        const gameDiv = document.querySelector('.game');
+        const gameDiv = document.querySelector('#game');
         gameDiv.textContent = gameBoard.board;
     };
 
@@ -38,4 +38,4 @@ const playerFactory = (name, marker) => {
 
 };
 
-displayController.updateGame();
+// displayController.updateGame();
