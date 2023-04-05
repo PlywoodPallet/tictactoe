@@ -21,12 +21,12 @@ const gameBoard = (() => {
 const displayController = (() => {
 
     // update the display of the game state on page
-    const updateGame = () => {
+    const displayGameBoard = () => {
         const gameDiv = document.querySelector('#game');
         gameDiv.textContent = gameBoard.board;
     };
 
-    return { updateGame };
+    return { displayGameBoard };
 
 })();
 
