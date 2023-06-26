@@ -1,3 +1,3 @@
 # tictactoe
 
-- unsure how to organize the grid in html. Should each cell be inside a row div, or just an unsorted list? If the latter, how do I identify each cell?
+- Originally had a complex 2d array for representing the board in js and html. Simplified into a 1d array and simple list of divs
