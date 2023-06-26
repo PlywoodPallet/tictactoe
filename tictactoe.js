@@ -5,12 +5,8 @@
 // Store the board, and handle changes in the board due to player action
 const gameBoard = (() => {
 
-    const board = [
-        [null, null, null],
-        [null, null, null],
-        [null, null, null]
-    ];
-
+    const board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    
     // make a board-changing method [row][col] to be similar with js 2d array syntax
 
     return { board };
