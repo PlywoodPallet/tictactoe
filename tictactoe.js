@@ -18,9 +18,13 @@ const displayController = (() => {
 
     // update the display of the game state on page
     const displayGameBoard = () => {
-        const gameDiv = document.querySelector('#game');
-        const row0 = gameDiv.querySelector('.row0');
-        console.log(row0);
+        const gameDiv = document.querySelector('#game')
+
+        // for every cell in gameBoard.board, update its cooresponding cell in html
+        for (let i = 0; i < gameBoard.board.length; i++) {
+            const cell = gameDiv.querySelector('.cell_' + i);
+            cell.textContent = gameBoard.board[i];
+        }
     };
 
     return { displayGameBoard };
