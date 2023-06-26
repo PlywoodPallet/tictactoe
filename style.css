@@ -1,9 +1,5 @@
 #game {
     display: grid;
-
-}
-
-.row {
-    display: grid;
     grid-template-columns: repeat(3, 150px);
+
 }
